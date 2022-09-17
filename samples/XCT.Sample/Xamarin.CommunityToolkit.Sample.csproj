@@ -21,6 +21,9 @@
   </ItemGroup>
   
   <ItemGroup>
+    <Compile Update="Pages\TestCases\ShieldViewGridColspanPage.xaml.cs">
+      <DependentUpon>ShieldViewGridColspanPage.xaml</DependentUpon>
+    </Compile>
     <Compile Update="Resx\AppResources.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
@@ -29,6 +32,9 @@
   </ItemGroup>
   
   <ItemGroup>
+    <EmbeddedResource Update="Pages\TestCases\ShieldViewGridColspanPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="Pages\TestCases\Popups\PopupModalPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
@@ -52,8 +58,6 @@
   <ItemGroup>
     <ProjectReference Include="..\..\src\CommunityToolkit\Xamarin.CommunityToolkit\Xamarin.CommunityToolkit.csproj" />
     <ProjectReference Include="..\..\src\Markup\Xamarin.CommunityToolkit.Markup\Xamarin.CommunityToolkit.Markup.csproj" />
-    <ProjectReference Include="..\..\src\SourceGenerator\Xamarin.CommunityToolkit.SourceGenerator\Xamarin.CommunityToolkit.SourceGenerator.csproj"
-                      OutputItemType="Analyzer"
-                      ReferenceOutputAssembly="false"/>
+    <ProjectReference Include="..\..\src\SourceGenerator\Xamarin.CommunityToolkit.SourceGenerator\Xamarin.CommunityToolkit.SourceGenerator.csproj" OutputItemType="Analyzer" ReferenceOutputAssembly="false" />
   </ItemGroup>
 </Project>

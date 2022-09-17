@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<pages:BasePage xmlns="http://xamarin.com/schemas/2014/forms"
+                xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                xmlns:pages="clr-namespace:Xamarin.CommunityToolkit.Sample.Pages"
+                xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
+                x:Class="Xamarin.CommunityToolkit.Sample.Pages.TestCases.ShieldViewGridColspanPage">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Spacing="12">
+                <Frame>
+                    <Grid ColumnDefinitions="*,*,*"
+                          RowDefinitions="auto,auto,auto"
+                          BackgroundColor="Black">
+                        <xct:Shield Subject="Test Subject"
+                                    SubjectBackgroundColor="Gray"
+                                    Status="Test Status"
+                                    StatusBackgroundColor="SeaGreen"
+                                    Grid.ColumnSpan="3"/>
+                        <Label Text="Test"
+                               Grid.Row="1" />
+                        <Label Text="Test"
+                               Grid.Row="2" />
+                    </Grid>
+                </Frame>
+                <Frame>
+                    <Grid ColumnDefinitions="*,*,*"
+                          RowDefinitions="auto,auto,auto"
+                          BackgroundColor="Black">
+                        <Frame CornerRadius="4"
+                               HorizontalOptions="Center" 
+                               VerticalOptions="Start"
+                               Padding="0"
+                               HasShadow="False"
+                               IsClippedToBounds="True"
+                               Grid.ColumnSpan="3">
+                            <Grid ColumnDefinitions="auto,auto" ColumnSpacing="0">
+                                <Grid BackgroundColor="Gray">
+                                    <Label Text="Test Subject" TextColor="White"
+                                           VerticalOptions="Center"
+                                           Margin="4,0" />
+                                </Grid>
+                                <Grid BackgroundColor="SeaGreen" Grid.Column="1">
+                                    <Label Text="Test Status"
+                                           VerticalOptions="Center"
+                                           Margin="4,0"/>
+                                </Grid>
+                            </Grid>
+                        </Frame>
+                        <Label Text="Test"
+                               Grid.Row="1" />
+                        <Label Text="Test"
+                               Grid.Row="2" />
+                    </Grid>
+                </Frame>
+                <Frame>
+                    <Grid ColumnDefinitions="*,*,*"
+                          RowDefinitions="auto,auto,auto"
+                          BackgroundColor="Black">
+                        <Frame CornerRadius="4"
+                               HorizontalOptions="Center" 
+                               VerticalOptions="Start"
+                               Padding="0"
+                               HasShadow="False"
+                               IsClippedToBounds="True"
+                               Grid.ColumnSpan="3">
+                            <Grid ColumnDefinitions="auto,auto" ColumnSpacing="0">
+                                <Grid BackgroundColor="Gray" ColumnDefinitions="auto">
+                                    <Label Text="Test Subject" TextColor="White"
+                                           VerticalOptions="Center"
+                                           Margin="4,0" />
+                                </Grid>
+                                <Grid BackgroundColor="SeaGreen" ColumnDefinitions="auto" Grid.Column="1">
+                                    <Label Text="Test Status"
+                                           VerticalOptions="Center"
+                                           Margin="4,0"/>
+                                </Grid>
+                            </Grid>
+                        </Frame>
+                        <Label Text="Test"
+                               Grid.Row="1" />
+                        <Label Text="Test"
+                               Grid.Row="2" />
+                    </Grid>
+                </Frame>
+                <Frame>
+                    <Grid ColumnDefinitions="*,*,*"
+                          RowDefinitions="auto,auto,auto"
+                          BackgroundColor="Black">
+                        <Frame CornerRadius="4"
+                               HorizontalOptions="Center" 
+                               VerticalOptions="Start"
+                               Padding="0"
+                               HasShadow="False"
+                               IsClippedToBounds="True"
+                               Grid.ColumnSpan="3">
+                            <Grid ColumnDefinitions="auto,auto" ColumnSpacing="0">
+                                <Label Text="Test Subject" TextColor="White" BackgroundColor="Gray"
+                                        VerticalOptions="Center"
+                                        Padding="4,0" />
+                                <Label Text="Test Status" BackgroundColor="SeaGreen"
+                                        VerticalOptions="Center"
+                                        Padding="4,0"
+                                       Grid.Column="1" />
+                            </Grid>
+                        </Frame>
+                        <Label Text="Test"
+                               Grid.Row="1" />
+                        <Label Text="Test"
+                               Grid.Row="2" />
+                    </Grid>
+                </Frame>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</pages:BasePage>
